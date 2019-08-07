@@ -30,7 +30,7 @@ def get_filters():
                 valid_city = True
             else:
                 print("We could not find the exact name in the mentioned city names. Please try again.")
-                
+
     print('\nYou entered:', city)
 
     # TO DO: get user input for month (all, january, february, ... , june)
@@ -94,7 +94,7 @@ def load_data(city, month, day):
     if day != 'all':
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day]
-    
+
     print(df)
     return df
 
@@ -182,6 +182,7 @@ def user_stats(df):
 
 
 def main():
+    # This will run until the user enters 'yes' at the end of each stat check.
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
