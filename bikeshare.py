@@ -115,6 +115,7 @@ def time_stats(df):
     print('Hour: {}'.format(df['Start Time'].dt.hour.mode()[0]))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+    # this will print a new line to indicate ending of time stats
     print('-'*40)
 
 
@@ -138,6 +139,7 @@ def station_stats(df):
     print('Most Popular Start and End Station Combo: {}'.format(df['Station Combo'].mode()[0]))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+    # this will print a new line to indicate ending of station stats
     print('-'*40)
 
 
@@ -155,6 +157,7 @@ def trip_duration_stats(df):
     print('Mean travel time : {}'.format(df['Time Taken'].mean()))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+    # this will print a new line to indicate ending of trip duration stats
     print('-'*40)
 
 
@@ -178,6 +181,7 @@ def user_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
+    # this will print a new line to indicate ending of user stats
     print('-'*40)
 
 
