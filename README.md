@@ -9,6 +9,9 @@ This project lets see the stats for Bike sharing in different cities based on da
 
 ### Files used
 Bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 https://stackoverflow.com/
