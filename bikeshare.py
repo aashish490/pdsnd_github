@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+# available cities
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -30,7 +31,7 @@ def get_filters():
                 valid_city = True
             else:
                 print("We could not find the exact name in the mentioned city names. Please try again.")
-                
+
     print('\nYou entered:', city)
 
     # TO DO: get user input for month (all, january, february, ... , june)
@@ -94,7 +95,7 @@ def load_data(city, month, day):
     if day != 'all':
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day]
-    
+
     print(df)
     return df
 
